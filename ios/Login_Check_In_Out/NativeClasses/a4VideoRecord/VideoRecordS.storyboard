@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yuL-nL-wCn">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video RecordVC-->
+        <scene sceneID="z5P-Rt-JcM">
+            <objects>
+                <viewController storyboardIdentifier="VideoRecordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yuL-nL-wCn" customClass="VideoRecordVC" customModule="Login_Check_In_Out" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbr-uc-lqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-te-SoX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="458"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuN-5g-K47">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="18b-F0-tZb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="nXr-5Z-gvO"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_red" translatesAutoresizingMaskIntoConstraints="NO" id="YQp-CQ-fk8">
+                                <rect key="frame" x="290" y="110" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="hb3-s4-N2f"/>
+                                    <constraint firstAttribute="width" secondItem="YQp-CQ-fk8" secondAttribute="height" id="wqV-uV-sgl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF2-Kb-9hc">
+                                <rect key="frame" x="8" y="0.0" width="304" height="100"/>
+                                <string key="text">look straight at the camera for 3 secs, then turn left and back straight next 5 secs and turn right and back straight for the remaining 5 secs.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="xuN-5g-K47" firstAttribute="trailing" secondItem="TV8-Jy-DZQ" secondAttribute="trailing" id="0Aw-ah-qVk"/>
+                            <constraint firstItem="YQp-CQ-fk8" firstAttribute="top" secondItem="xuN-5g-K47" secondAttribute="bottom" constant="10" id="FYO-LV-wf9"/>
+                            <constraint firstItem="H8E-te-SoX" firstAttribute="top" secondItem="TV8-Jy-DZQ" secondAttribute="top" id="GAh-vQ-906"/>
+                            <constraint firstItem="xuN-5g-K47" firstAttribute="top" secondItem="TV8-Jy-DZQ" secondAttribute="top" id="Oma-4U-jQf"/>
+                            <constraint firstItem="ZF2-Kb-9hc" firstAttribute="centerY" secondItem="xuN-5g-K47" secondAttribute="centerY" id="Pl6-6R-1Fx"/>
+                            <constraint firstItem="TV8-Jy-DZQ" firstAttribute="bottom" secondItem="H8E-te-SoX" secondAttribute="bottom" constant="110" id="VNw-nA-vcm"/>
+                            <constraint firstItem="H8E-te-SoX" firstAttribute="centerX" secondItem="TV8-Jy-DZQ" secondAttribute="centerX" id="fI3-Zl-gkb"/>
+                            <constraint firstItem="TV8-Jy-DZQ" firstAttribute="trailing" secondItem="YQp-CQ-fk8" secondAttribute="trailing" constant="10" id="gHH-MP-Vf3"/>
+                            <constraint firstItem="H8E-te-SoX" firstAttribute="width" secondItem="Pbr-uc-lqF" secondAttribute="width" id="gdd-Ei-D91"/>
+                            <constraint firstItem="ZF2-Kb-9hc" firstAttribute="width" secondItem="xuN-5g-K47" secondAttribute="width" multiplier="0.95" id="gf2-o3-CIp"/>
+                            <constraint firstItem="ZF2-Kb-9hc" firstAttribute="height" secondItem="xuN-5g-K47" secondAttribute="height" id="o0l-P1-ouz"/>
+                            <constraint firstItem="xuN-5g-K47" firstAttribute="leading" secondItem="TV8-Jy-DZQ" secondAttribute="leading" id="vHB-7N-omy"/>
+                            <constraint firstItem="ZF2-Kb-9hc" firstAttribute="centerX" secondItem="xuN-5g-K47" secondAttribute="centerX" id="w75-4T-Ata"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TV8-Jy-DZQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="camPreview" destination="H8E-te-SoX" id="TbX-RN-ILQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzy-hF-LQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="round_red" width="50" height="50"/>
+    </resources>
+</document>
